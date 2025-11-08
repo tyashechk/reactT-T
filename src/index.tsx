@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from '../components/App';
+import App from './components/App';
 import './styles/index.scss';
 
 const root = ReactDOM.createRoot(
@@ -14,14 +14,14 @@ root.render(
 );
 
 import { Provider } from 'mobx-react';
-import { store } from '../stores/store';
+import { store } from './stores/store';
 
 <Provider store={store}>
     <App />
 </Provider>
 
-import { RootStoreContext } from '../stores/RootStoreContext';
-import rootStore from '../stores/RootStore';
+import { RootStoreContext } from './stores/RootStoreContext';
+import rootStore from './stores/RootStore';
 
 <RootStoreContext.Provider value={rootStore}>
     <App />

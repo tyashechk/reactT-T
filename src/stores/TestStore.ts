@@ -1,5 +1,5 @@
 import { makeObservable, observable, action, runInAction, computed } from 'mobx';
-import { testData } from '../src/api/controllers/common-controller';
+import { testData } from '../api/controllers/common-controller';
 import { TestDataItem, TestDataResponse } from '../types/test-data-types';
 
 export class TestStore {

@@ -1,4 +1,4 @@
-import { TestDataResponse } from '../../../types/test-data-types';
+import { TestDataResponse } from '../../types/test-data-types';
 
 // testData как функция
 export const testData = async (): Promise<TestDataResponse> => {
